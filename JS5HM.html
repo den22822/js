@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5</title>
+</head>
+<body>
+    <script>
+        let Userlogin = prompt('введіть ваш логін', '');
+        if (Userlogin === null){
+            alert ("вхід скасовано✅")
+        }else if (Userlogin != "User") {
+         alert( 'користувач невизначений❌' );
+        } else if (Userlogin == "User") {
+        let password = prompt("введіть ваш пароль")
+        if (password === null){
+            alert ('вхід скасовано✅')
+        }else if (password =='password'){
+            alert ("ласкаво просимо")
+        }else if (password != "password"){
+            alert ("пароль невірний❌")
+        }}
+    </script>
+</body>
+</html> 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let number=+prompt('how many comliments do you want?',6);
+    let compliments=['pretty','cute','friendly','good','clever','smart'];
+    let animals=['dog','cat','shark','snake','bear','rabbit','fish','dolphins','turtle','parrot','panda','baby_shark'];
+    let colors=['red','orange','yellow','green','blue','purple'];
+    for( let i=1;i<=number;i++){
+    let randCompliments=Math.floor(Math.random()*compliments.length);
+    let randanimals=Math.floor(Math.random()*compliments.length);
+    let randcolors=Math.floor(Math.random()*colors.length);
+    document.write(` <p style='color:${colors[randcolors]}'> ${i}) ${compliments[randCompliments]} as ${animals[randanimals]}! </p>`)
+    }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   let str = prompt("введіть будь який рядок!","бредуть бобри в сирі бори. бобри хоробрі, а для бобрят добрі");
+let target = prompt("який підрядок ми будемо шукати","ри") // мета пошуку 
+let position = 0;
+// Довжину рядка визначати не будемо використовуємо нескінченний цикл з перериванням break вкінці рядка
+while (true) {
+  let searchPos = str.indexOf(target, position);
+  if (searchPos == -1) break; // якщо рядок закінчився
+
+  alert( 'знайшли '+ target+' тут: ' + searchPos );
+  position = searchPos + 1; // продовжити пошук з наступного
+}
+   </script> 
+</body>
+</html>

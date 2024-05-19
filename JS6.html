@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <script>
+let money = +prompt('Яку суму хочете зняти (мінімальна купюра 50 грн.)','');
+if (money < 50 || money > 3000) {
+  alert('На жаль, Ви  можете зняти гроші на суму від 50 грн. до 3000 грн.');
+}else if(money%50==0){
+alert(`забирайте ваши ${money} грн` )
+}else{
+    alert(`у банкоматі відсутні такі купюри, тому ви можете забрати ${money-money%50} грн! А ${money%50} грн я заберу собі як комісію, тому що ви не вмієте рахувати!`)
+}
+</script>
+</body>
+</html>

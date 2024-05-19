@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Порівняння чисел</title>
+</head>
+<body>
+    <h1>Порівняння чисел</h1>
+
+    <p>Введіть перше число:</p>
+    <input id="num1" type="number" />
+
+    <p>Введіть друге число:</p>
+    <input id="num2" type="number" />
+
+    <button onclick="compareNumbers()">Порівняти</button>
+
+    <p id="result"></p>
+
+    <script>
+        function compareNumbers() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var resultElement = document.getElementById('result');
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                var result = num1 > num2 ? num1 : num2;
+                resultElement.textContent = 'Більше значення: ' + result;
+            } else {
+                resultElement.textContent = 'Будь ласка, введіть числа в обидва поля';
+            }
+        }
+    </script>
+</body>
+</html>
